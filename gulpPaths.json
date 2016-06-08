@@ -1,0 +1,52 @@
+{
+    "ALL": [
+        "WebContent/**/*.*",
+        "WebContent/data/*.*",
+        "!WebContent/**/*.exe",
+        "!WebContent/build",
+        "!WebContent/temp"
+
+    ],
+
+    "DEST": "WebContent/temp",
+    "BUILD": "WebContent/build",
+
+    "ScriptsPath": [
+    	"!WebContent/temp/lib/*.js",
+    	"WebContent/temp/common/**/*.js",
+    	"WebContent/temp/modules/**/*.js",
+    	"WebContent/temp/app.js",
+    	"WebContent/temp/config.js"
+    	],
+
+    "LIBPath": [
+    	"WebContent/temp/lib/*.js"
+    	],
+	"temp":"WebContent/temp",
+    "CleanBefore": [
+    				"WebContent/temp/*",
+    				"WebContent/build/*"
+    			   ],
+    "HTML": ["WebContent/temp/index.html"],
+    "CSS": ["WebContent/temp/**/*.css"],
+    "FONTS": ["WebContent/temp/assets/fonts/*"],
+    "IMAGES": ["WebContent/temp/assets/img/*"],
+    "MODULES": [
+    		  "!WebContent/temp/modules/**/*.js",
+    		  "!WebContent/temp/modules/**/*.css",
+    		  "WebContent/temp/modules/**/*.html"
+    		  ],
+    "WORKERS": [
+		"WebContent/temp/**/customReport.js",
+		"WebContent/temp/**/excelWorker.js",
+		"WebContent/temp/**/manufacturerWorker.js",
+		"WebContent/temp/**/marketshareWorker.js",
+		"WebContent/temp/**/jszip.min.js",
+		"WebContent/temp/**/excel-builder.compiled.min.js"
+	],
+    "STYLES": [
+    		"WebContent/temp/assets/style/*",
+    		"!WebContent/temp/assets/style/*.css"
+    		],
+    "DATAJASON": ["WebContent/data/world-topo-min.json"]
+}
